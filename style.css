@@ -20,8 +20,6 @@
     flex-direction: column;
     width: 65%;
     margin: auto;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
     margin-top: 65px;
 }
 
@@ -61,12 +59,29 @@
     display: none;
 }
 
+.btn {    
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #203647;
+}
 
-/* level */
+.btn:hover {
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.4);
+}
 
-.select {
-    align-self: flex-start;
+
+
+/* setting */
+
+
+.setting {
     margin: 0.8em;
+    display: flex;
+    align-self: flex-start;
 }
 
 select {
@@ -76,7 +91,7 @@ select {
     border-bottom: 2px solid #203647;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: #203647;
 }
 
@@ -93,35 +108,38 @@ option {
     padding: 0px 2px 1px;
 }
 
+.restart {
+    margin-left: 18px;
+}
+
 /* player select */
 .player {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: space-around;
     margin: 0;
 }
 
-
-.selected {
+.chosen {
     color: #203647;
     font-weight: 600;
-    border: 2px solid #203647;
     -webkit-box-shadow: -1px 7px 22px -6px grey;
-    box-shadow: -1px 7px 22px -6px grey;
+    box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.4);
+
 }
 
-.not-selected {
+.unchosen {
     box-shadow: none;
     font-weight: 600;
     color: grey;
     border-width: 1.5px;
 }
 
-.btn-p {
+.player-btn {
     width: 15em;
     height: 2.5em;
     margin: 1em 1em 1em 1em;
+    border-bottom: 0;
 }
 
 
@@ -138,7 +156,7 @@ option {
 .field {
     width: 150px;
     height: 150px;
-    border: 2.7px solid var(--border-color);
+    border: 2.9px solid var(--border-color);
     font-size: 100px;
     text-align: center;
     cursor: pointer;
@@ -176,3 +194,29 @@ option {
 {
     border-right: 0;
 }
+
+/* footer */
+
+.footer {
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 28px;
+}
+
+.fa-github {
+    color: var(--font-color);
+    font-size: 30px;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(1turn) scale(1.5);
+  }
