@@ -28,7 +28,7 @@
 .win p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: white;
+    color: black;
     z-index: 1;
     -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -39,7 +39,7 @@
     left: 50%;
     top: 25%;
     transform: translate(-50%, 0);
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .sign {
@@ -47,7 +47,7 @@
     left: 50%;
     top: 40%;
     transform: translate(-50%, 0);
-    font-size: 150px;
+    font-size: 175px;
     margin: 0;
 }
 
@@ -138,7 +138,7 @@ option {
 .player-btn {
     width: 15em;
     height: 2.5em;
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1em 1.5em 1em;
     border-bottom: 0;
 }
 
@@ -162,7 +162,7 @@ option {
     cursor: pointer;
     user-select: none;
 }
-  
+
 .field:hover {
     box-shadow: 0px 2px 8px 1px rgba(0,0,0,0.4)
 }
@@ -194,6 +194,111 @@ option {
 {
     border-right: 0;
 }
+
+.field p {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+/* animation */
+
+.appear {
+    -webkit-animation: appear 0.45s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+    animation: appear 0.45s cubic-bezier(0.550, 0.055, 0.675, 0.190) both;
+}
+
+@-webkit-keyframes appear {
+    0% {
+        -webkit-transform: scale(4);
+        transform: scale(4);
+        -webkit-filter: blur(4px);
+        filter: blur(6px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        -webkit-transform: scale(4);
+        transform: scale(4);
+        -webkit-filter: blur(4px);
+        filter: blur(6px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.blur {
+    -webkit-animation: blur 1.2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+    }
+    100% {
+        -webkit-filter: blur(7px);
+    }
+}
+
+.unblur{
+    -webkit-animation: unblur 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes unblur {
+    0% {
+        -webkit-filter: blur(5px);
+    }
+    100% {
+        -webkit-filter: blur(0px);
+    }
+}
+
 
 /* footer */
 
