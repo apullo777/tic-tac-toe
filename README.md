@@ -8,7 +8,7 @@ A simple tic-tac-toe webgame built to practise JavaScript factory functions and 
 
 <h3> Live app </h3>
 
-https://apullo777.github.io/calculator/
+https://apullo777.github.io/tic-tac-toe/
    
   <img src="/preview1.png" data-canonical-src="/preview1.png =200x200" width="800" />
   <img src="/preview2.png" data-canonical-src="/preview2.png =200x200" width="800" />
