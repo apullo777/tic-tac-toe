@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://use.fontawesome.com/3ae9040299.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="win">
-        <p class="winner hide">The Winner is</p>
-        <p class="x-text sign hide">X</p>
-        <p class="o-text sign hide">O</p>
-        <p class="winner draw hide">It's a Draw</p>
+      <p class="winner hide">The Winner is</p>
+      <p class="x-text sign hide">X</p>
+      <p class="o-text sign hide">O</p>
+      <p class="winner draw hide">It's a Draw</p>
     </div>
 
     <div class="container">
-        <div class="setting">
-            <form action="" class="form">
-                <select name="levels" id="levels">
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                    <option value="unbeatable">Unbeatable</option>
-                </select>
-            </form>
-            <button class="btn restart">Restart</button>
-        </div>
-        <div class="player">
-            <button class="btn player-btn x">X</button>
-            <button class="btn player-btn o">O</button>
-        </div>
-        <div class="gameboard">
-            <div class="field" data-index="0"><p></p></div>
-            <div class="field" data-index="1"><p></p></div>
-            <div class="field" data-index="2"><p></p></div>
-            <div class="field" data-index="3"><p></p></div>
-            <div class="field" data-index="4"><p></p></div>
-            <div class="field" data-index="5"><p></p></div>
-            <div class="field" data-index="6"><p></p></div>
-            <div class="field" data-index="7"><p></p></div>
-            <div class="field" data-index="8"><p></p></div>
-        </div>
-
+      <div class="setting">
+        <form action="" class="form">
+          <select name="levels" id="levels">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="unbeatable">Unbeatable</option>
+          </select>
+        </form>
+        <button class="btn restart">Restart</button>
+      </div>
+      <div class="player">
+        <button class="btn player-btn x">X</button>
+        <button class="btn player-btn o">O</button>
+      </div>
+      <div class="gameboard">
+        <div class="field" data-index="0"><p></p></div>
+        <div class="field" data-index="1"><p></p></div>
+        <div class="field" data-index="2"><p></p></div>
+        <div class="field" data-index="3"><p></p></div>
+        <div class="field" data-index="4"><p></p></div>
+        <div class="field" data-index="5"><p></p></div>
+        <div class="field" data-index="6"><p></p></div>
+        <div class="field" data-index="7"><p></p></div>
+        <div class="field" data-index="8"><p></p></div>
+      </div>
     </div>
 
     <div class="footer">
-        <p>Copyright © 2022 apullo777</p>
-        <a href="https://github.com/apullo777" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
+      <p>Copyright © 2022 apullo777</p>
+      <a href="https://github.com/apullo777" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
